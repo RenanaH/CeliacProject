@@ -1,0 +1,13 @@
+
+<form  [formGroup]=formGroup (ngSubmit)= "updateName()">
+<p>
+  Name:
+  <input type="text" formControlName="name">
+  Mail:
+  <input type="email" formControlName="mail">
+</p>
+  <p>
+    <button type="submit" [disabled]="!formGroup.valid">login</button>
+  </p>
+</form>
+

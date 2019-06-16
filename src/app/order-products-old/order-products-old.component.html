@@ -1,0 +1,23 @@
+<div fxLayout="column" fxFlex >
+ 
+  <mat-sidenav-container fxFlex>
+    <mat-sidenav mode="side" opened>
+      <mat-tab-group>
+        <mat-tab label="Users">
+          <mat-nav-list>
+            <mat-list-item *ngFor="let user of users">
+              <span>{{user.name}}</span>
+            </mat-list-item>
+          </mat-nav-list>
+        </mat-tab>
+        <!-- <mat-tab label="Settings">
+          <span>Settings</span>
+        </mat-tab> -->
+      </mat-tab-group>
+    </mat-sidenav>
+    <br/>
+    <div class="content">
+      Page Content
+    </div>
+  </mat-sidenav-container>
+  </div>

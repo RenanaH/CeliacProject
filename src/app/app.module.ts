@@ -14,6 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { NavigationProjectComponent } from './navigation-project/navigation-project.component';
+import { HttpClientModule } from '@angular/common/http';
+
 import {
   MatButtonModule,
   MatCardModule,
@@ -29,6 +31,7 @@ import {
   MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
+import { OrderProductsOldComponent } from './order-products-old/order-products-old.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,7 @@ import {
     OrderProductsComponent,
     LoginPageComponent,
     NavigationProjectComponent,
+    OrderProductsOldComponent,
    
   ],
   imports: [
@@ -51,6 +55,8 @@ import {
     NoopAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
+    //server
+    HttpClientModule ,
     //material
     MatButtonModule,
     MatCardModule,

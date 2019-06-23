@@ -2,24 +2,13 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
+<div *ngFor="let p of products" class="col-md-2 column productbox">
+    <app-product [product]="p"></app-product>
+    <!-- <img src ={{image}} class="img-responsive">
+     <div class="producttitle">{{name}}</div>
+     <div class="productprice"><div class="pull-right">
+         <a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div>
+     <div class="pricetext">{{price}}</div>
+     <div class="pricetext">{{description}}</div> -->
+ </div>
 
-<div class="col-md-2 column productbox">
-    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-    <div class="producttitle">Product 2</div>
-    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
-</div>
-<div class="col-md-2 column productbox">
-    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-    <div class="producttitle">Product 2</div>
-    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
-</div>
-<div class="col-md-2 column productbox">
-    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-    <div class="producttitle">Product 3</div>
-    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
-</div>
-<div class="col-md-2 column productbox">
-    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-    <div class="producttitle">Product 4</div>
-    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
-</div>

@@ -29,19 +29,19 @@ public getPaymentById(id: number){
 public getPayments(url?: string){}
 
 //test
-public getContacts(url?: string){
+// public getContacts(url?: string){
 
-  if(url){
-    return this.httpClient.get<Payment[]>(url,{ observe: 'response' }).pipe(tap(res => {
-      this.retrieve_pagination_links(res);
-    }));
-  }
+//   if(url){
+//     return this.httpClient.get<Payment[]>(url,{ observe: 'response' }).pipe(tap(res => {
+//       this.retrieve_pagination_links(res);
+//     }));
+//   }
 
-  return this.httpClient.get<Payment[]>(`${this.apiURL}/customers?page=1`,
-  { observe: 'response' }).pipe(tap(res => {
-    this.retrieve_pagination_links(res); 
-  }));
-}
+//   return this.httpClient.get<Payment[]>(`${this.apiURL}/customers?page=1`,
+//   { observe: 'response' }).pipe(tap(res => {
+//     this.retrieve_pagination_links(res); 
+//   }));
+// }
 parse_link_header(header) {
   if (header.length == 0) {
     return ;

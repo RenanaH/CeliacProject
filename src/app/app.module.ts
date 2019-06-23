@@ -32,6 +32,7 @@ import {
   MatToolbarModule
 } from '@angular/material';
 import { OrderProductsOldComponent } from './order-products-old/order-products-old.component';
+import { ProductsService } from './products.service';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,7 @@ import { OrderProductsOldComponent } from './order-products-old/order-products-o
   exports:[
   MatButtonModule,
   MatCheckboxModule],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

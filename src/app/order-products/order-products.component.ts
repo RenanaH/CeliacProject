@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ProductComponent } from '../product/product.component';
+import { ProductsService } from '../products.service';
 @Component({
   selector: 'app-order-products',
   templateUrl: './order-products.component.html',
@@ -7,23 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderProductsComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
+   // throw new Error("Method not implemented.");
+    this.getProducts();
   }
-  users = [
-    {
-      name: 'Lia Lugo',
-      avatar: 'svg-11',
-      details: 'I love cheese, ...',
-      isAdmin: true,
-      isCool: false
-    },
-    {
-      name: 'George Duke',
-      avatar: 'svg-12',
-      details: 'Zombie ipsum ...',
-      isAdmin: false,
-      isCool: true
-    }
-    ];
-  
+  products=[];
+
+ constructor(private productService :ProductsService)
+ {
+   
+ }
+ 
+ getProducts(): void {
+  this.products = this.productService.getProducts();
+}
 }

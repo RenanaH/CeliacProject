@@ -5,13 +5,14 @@ import { AboutCeliacCommunityComponent } from './about-celiac-community/about-ce
 import { OrderProductsComponent } from './order-products/order-products.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductComponent } from './product/product.component';
+import { OneProductComponent } from './one-product/one-product.component';
 
 const routes: Routes = [
   { path: 'app-what-this-celiac', component: WhatThisCeliacComponent },
   { path: 'app-about-celiac-community', component: AboutCeliacCommunityComponent },
   { path: 'app-order-products', component: OrderProductsComponent },
  // { path: 'app-contact-us', component: ContactUsComponent }
-  { path: 'app-product', component: ProductComponent }
+  { path: 'app-one-product', component: OneProductComponent }
 ];
 
 @NgModule({

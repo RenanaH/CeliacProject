@@ -33,6 +33,8 @@ import {
 } from '@angular/material';
 import { OrderProductsOldComponent } from './order-products-old/order-products-old.component';
 import { ProductsService } from './products.service';
+import { AddProductComponent } from './add-product/add-product.component';
+import { OneProductComponent } from './one-product/one-product.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { ProductsService } from './products.service';
     LoginPageComponent,
     NavigationProjectComponent,
     OrderProductsOldComponent,
+    AddProductComponent,
+    OneProductComponent,
    
   ],
   imports: [

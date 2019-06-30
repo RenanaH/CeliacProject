@@ -2,7 +2,10 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<div *ngFor="let p of products" class="col-md-2 column productbox">
+<!-- חללחלחל -->
+
+<!-- לךלךל -->
+    <div *ngFor="let p of products" class="div-products">
     <app-product [product]="p"></app-product>
     <!-- <img src ={{image}} class="img-responsive">
      <div class="producttitle">{{name}}</div>
@@ -10,5 +13,30 @@
          <a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div>
      <div class="pricetext">{{price}}</div>
      <div class="pricetext">{{description}}</div> -->
- </div>
+</div>
+
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+         <div class="row row-margin-bottom mt-5">
+              <div class="col-md-6 no-padding lib-item" data-category="view">
+                  <div class="lib-panel">
+                      <div class="row box-shadow w-100"  >
+
+                          <div class="col-md-6 image-row" *ngFor="let p of products">
+                              <div class="lib-row lib-header text-left pl-5">
+                            <app-product [product]="p"></app-product>
+                        </div>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+              
+              
+             
+          </div>
+        </div>
+      </div>
+
 

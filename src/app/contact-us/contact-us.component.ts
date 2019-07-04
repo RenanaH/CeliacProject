@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { ConnectionService } from '../connection.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -6,10 +8,49 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent implements OnInit {
+  //submitted = false;
 
-  constructor() { }
+  //onSubmit() { this.submitted = true; }
+
+  contactForm: FormGroup;
+  disabledSubmitButton: boolean = true;
+  optionsSelect: Array<any>;
+  
+    @HostListener('input') oninput() {
+  
+      if (this.contactForm.valid) {
+        this.disabledSubmitButton = false;
+      }
+    }
+  
+    constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
+
+      this.contactForm = fb.group({
+        'contactFormName': ['', Validators.required],
+        'contactFormEmail': ['', Validators.compose([Validators.required, Validators.email])],
+       // 'contactFormSubjects': ['', Validators.required],
+        'contactFormMessage': ['', Validators.required],
+       // 'contactFormCopy': [''],
+        });
+      }
 
   ngOnInit() {
+    this.optionsSelect = [
+      { value: 'Feedback', label: 'Feedback' },
+      { value: 'Report a bug', label: 'Report a bug' },
+      { value: 'Feature request', label: 'Feature request' },
+      { value: 'Other stuff', label: 'Other stuff' },
+      ];
+    }
+  
+    onSubmit() {
+      this.connectionService.sendMessage(this.contactForm.value).subscribe(() => {
+        alert('Your message has been sent.');
+        this.contactForm.reset();
+        this.disabledSubmitButton = true;
+      }, error => {
+        console.log('Error', error);
+      });
+    }
+  
   }
-
-}

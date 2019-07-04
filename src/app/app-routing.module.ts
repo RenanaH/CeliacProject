@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: 'app-what-this-celiac', component: WhatThisCeliacComponent },
   { path: 'app-about-celiac-community', component: AboutCeliacCommunityComponent },
   { path: 'app-order-products', component: OrderProductsComponent },
- // { path: 'app-contact-us', component: ContactUsComponent }
-  { path: 'app-one-product', component: OneProductComponent }
+ { path: 'app-contact-us', component: ContactUsComponent }
+ //{ path: 'app-one-product', component: OneProductComponent }
 ];
 
 @NgModule({

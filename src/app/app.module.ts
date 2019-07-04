@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,8 @@ import { OrderProductsOldComponent } from './order-products-old/order-products-o
 import { ProductsService } from './products.service';
 import { AddProductComponent } from './add-product/add-product.component';
 import { OneProductComponent } from './one-product/one-product.component';
+import { ConnectionService } from './connection.service';
+import { ChildProductComponent } from './child-product/child-product.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +53,7 @@ import { OneProductComponent } from './one-product/one-product.component';
     OrderProductsOldComponent,
     AddProductComponent,
     OneProductComponent,
+    ChildProductComponent,
    
   ],
   imports: [
@@ -76,14 +80,17 @@ import { OneProductComponent } from './one-product/one-product.component';
     MatSlideToggleModule,
     MatTabsModule,
     MatToolbarModule,
+    MatCardModule
     // Flex-layout
    // FlexLayoutModule
   ],
-  
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+],
   exports:[
   MatButtonModule,
   MatCheckboxModule],
-  providers: [ProductsService],
+  providers: [ProductsService, ConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

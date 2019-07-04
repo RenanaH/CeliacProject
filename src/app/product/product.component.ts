@@ -8,6 +8,7 @@ import { Product } from './Product';
 export class ProductComponent implements OnInit {
   
   @Input() product: Product;
+  public should_product = false;
 
 
   constructor() { 
@@ -17,5 +18,11 @@ export class ProductComponent implements OnInit {
     
   }
   
+  Buy()
+  {
+    this.should_product = true;
+
+  }
+
 
 }

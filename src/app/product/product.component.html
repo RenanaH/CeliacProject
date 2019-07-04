@@ -2,8 +2,13 @@
    <img [src]="product.image" class="img-responsive">
     <div class="producttitle">{{product.name}}</div>
     <div class="productprice"><div class="pull-right">
-        <a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div>
+        <a href="#" class="btn btn-danger btn-sm" role="button" (click)="Buy()">BUY</a></div>
     <div class="pricetext">{{product.price}}</div>
     <div class="pricetext">{{product.description}}</div>
+    <div *ngIf="should_product">
+            <app-one-product [product]="p"></app-one-product>
+
+        <!-- <child-component (onItemSelect)="itemSelected($event)" [items]="persons"></child-component> -->
+     </div>
 </div>
 </div>

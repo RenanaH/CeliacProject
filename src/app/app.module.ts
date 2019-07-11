@@ -11,7 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductComponent } from './product/product.component';
 import { OrderProductsComponent } from './order-products/order-products.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { NavigationProjectComponent } from './navigation-project/navigation-project.component';
@@ -60,6 +60,7 @@ import { ChildProductComponent } from './child-product/child-product.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
     MatButtonModule,

@@ -1,9 +1,9 @@
-a {
-    text-align: center;
-    margin:5%;
-font-size: 30px;
-color: aliceblue;
-}
+// a {
+//     text-align: center;
+//     margin:5%;
+// font-size: 30px;
+// color: aliceblue;
+// }
 // a{
 //   display: flex;
 // 	flex-direction: row;
@@ -14,7 +14,22 @@ color: aliceblue;
 // }
 
   
-  .example-spacer {
-    flex:1 1 auto;
-  }
+  // .example-spacer {
+  //   flex:1 1 auto;
+  // }
   
+    .elementor-image img {
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    padding: 0px 0px;
+}
+
+  .filler {
+    flex: 1 1 auto;
+ }
+ .gap {
+    margin-right: 10px;
+    flex: 1 1 auto;
+ }

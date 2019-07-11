@@ -4,14 +4,14 @@
 //     Breads,
 // }
 export class Product{
-    id:Number;
+    id:String;
     name: String;
     image:String;
     price:Number;
     category:String;
     description:String;
   
-    constructor( id:Number,name: String, image:String,price:Number ,category:String,description:String)
+    constructor( id:String,name: String, image:String,price:Number ,category:String,description:String)
     { 
         this.id=id;
         this. name=name;

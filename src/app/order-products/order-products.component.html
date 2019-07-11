@@ -7,12 +7,22 @@
 <!-- לךלךל -->
     <div *ngFor="let p of products" class="div-products">
     <app-product [product]="p"></app-product>
-    <!-- <img src ={{image}} class="img-responsive">
-     <div class="producttitle">{{name}}</div>
-     <div class="productprice"><div class="pull-right">
-         <a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div>
-     <div class="pricetext">{{price}}</div>
-     <div class="pricetext">{{description}}</div> -->
+</div>
+<div class="col-25">
+  <div class="container">
+<h4>Cart 
+  <span class="price" style="color:black">
+    <i class="fa fa-shopping-cart"></i> 
+    <!-- לשאוללללללללל -->
+    <b>{{index}}</b>
+        <!-- לשאוללללללללל -->
+
+  </span>
+</h4>
+<p><a href="#">Product 4</a> <span class="price">$2</span></p>
+<hr>
+<p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+</div>
 </div>
 
     <!-- <div class="container pt-5">
@@ -38,7 +48,7 @@
           </div>
         </div>
       </div> -->
-
+<!-- 
       <div class="container">
            
 
@@ -49,4 +59,4 @@
          
        
         </div>
-        </div>
+        </div> -->

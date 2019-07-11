@@ -19,6 +19,6 @@ export class OrderProductsComponent implements OnInit {
  }
  
  getProducts(): void {
-  this.products = this.productService.getProducts();
+  this.products = this.productService.findAll();
 }
 }

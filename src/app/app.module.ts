@@ -38,6 +38,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { OneProductComponent } from './one-product/one-product.component';
 import { ConnectionService } from './connection.service';
 import { ChildProductComponent } from './child-product/child-product.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ChildProductComponent } from './child-product/child-product.component';
     AddProductComponent,
     OneProductComponent,
     ChildProductComponent,
+    CartComponent,
    
   ],
   imports: [

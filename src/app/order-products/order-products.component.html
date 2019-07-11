@@ -7,6 +7,9 @@
 <!-- לךלךל -->
     <div *ngFor="let p of products" class="div-products">
     <app-product [product]="p"></app-product>
+    <!-- <a [routerLink]="['/cart', { id:product.id }]">Buy Now</a> -->
+    <a [routerLink]="['/cart']">Buy Now</a>
+
 </div>
 <div class="col-25">
   <div class="container">

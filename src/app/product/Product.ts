@@ -10,6 +10,7 @@ export class Product{
     price:Number;
     category:String;
     description:String;
+    quantity:Number;
   
     constructor( id:String,name: String, image:String,price:Number ,category:String,description:String)
     { 

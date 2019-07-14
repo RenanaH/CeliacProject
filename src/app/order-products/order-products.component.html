@@ -6,27 +6,36 @@
 
 <!-- לךלךל -->
     <div *ngFor="let p of products" class="div-products">
-    <app-product [product]="p"></app-product>
-    <!-- <a [routerLink]="['/cart', { id:product.id }]">Buy Now</a> -->
-    <a [routerLink]="['/cart']">Buy Now</a>
-
-</div>
+      <div class="div-products">
+    <app-product [product]="p"></app-product></div>
+    </div>
+    <!-- <div class="div-products"></div> -->
+        <!-- <a [routerLink]="['/cart', { id:p.id }]">Buy Now</a></div> -->
+    <!-- <a [routerLink]="['/cart']">Buy Now</a> -->
+    <!-- <a (click)="remove(p.id)">הסר</a> -->
+<!-- </div>
 <div class="col-25">
   <div class="container">
 <h4>Cart 
-  <span class="price" style="color:black">
-    <i class="fa fa-shopping-cart"></i> 
-    <!-- לשאוללללללללל -->
-    <b>{{index}}</b>
-        <!-- לשאוללללללללל -->
+    <span class="price" style="color:black">
+        <i class="fa fa-shopping-cart"></i> 
+      </span>
+    </h4> -->
 
-  </span>
-</h4>
+   
+<!-- <div>
+    <p>{{p.id}}</p>
+    <p>{{p.name}}</p>
+    <td>{{p.price}}</td>
+     <td>{{item.quantity}}</td> -->
+    <!--<td>{{item.product.price * item.quantity}}</td>
+  </div> -->
+<!-- 
 <p><a href="#">Product 4</a> <span class="price">$2</span></p>
 <hr>
-<p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-</div>
-</div>
+<p>Total:  <span class="price" style="color:black"><b>{{item.product.price * item.quantity}}</b></span></p>
+</div> -->
+
 
     <!-- <div class="container pt-5">
       <div class="row">

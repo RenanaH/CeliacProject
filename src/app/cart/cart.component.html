@@ -13,12 +13,13 @@
     <tr *ngFor="let item of items">
         <!-- <td align="center"> -->
           <td>
-            <a (click)="remove(item.product.id)">X</a>
+            <a (click)="remove(item.product.id)">הסר</a>
         </td>
         <td>{{item.product.id}}</td>
         <td>{{item.product.name}}</td>
         <td>
-            <img src="assets/http://learningprogramming.net/wp-content/uploads/mean_stack/angular/{{item.product.photo}}" width="50">
+            <!-- <img src="assets/http://learningprogramming.net/wp-content/uploads/mean_stack/angular/{{item.product.image}}" width="50"> -->
+            <img [src]="item.product.image" class="img-product">
         </td>
         <td>{{item.product.price}}</td>
         <td>{{item.quantity}}</td>

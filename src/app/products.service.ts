@@ -31,33 +31,38 @@ private getSelectedIndex(id: string) {
 }
   constructor() {
     this.products =[{
-      "id":"1",
+      "id":"111",
       "name": "hero Product",
       "image": "https://mdyo8n9ckd3g81vs1qipy6bt-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/FIXED-Writing-on-Plaque-7.jpg",
-      "price": 99,
+      "price": 200,
       "category":"hhgh",
       "description": "Lorem ipsum dolor sit amet",
+      "quantity":0
     },{
-      "id":"2",
+      "id":"222",
       "name": "hero Product",
       "image":"https://mdyo8n9ckd3g81vs1qipy6bt-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/FIXED-Writing-on-Plaque-7.jpg",
-      "price": 99,
+      "price": 55,
       "category":"hhgh",
       "description": "Lorem ipsum dolor sit amet",
+      "quantity":0
     },{
-      "id":"1",
+      "id":"333",
       "name": "hero Product",
       "image": "https://mdyo8n9ckd3g81vs1qipy6bt-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/FIXED-Writing-on-Plaque-7.jpg",
       "price": 99,
       "category":"hhgh",
       "description": "Lorem ipsum dolor sit amet",
+      "quantity":0
     },{
-      "id":"1",
+      "id":"4444",
       "name": "hero Product",
       "image": "https://mdyo8n9ckd3g81vs1qipy6bt-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/FIXED-Writing-on-Plaque-7.jpg",
-      "price": 99,
+      "price": 300,
       "category":"hhgh",
-      "description": "Lorem ipsum dolor sit amet"}
+      "description": "Lorem ipsum dolor sit amet",
+      "quantity":0
+  }
     // },{
     //   "id":1,
     //   "name": "hero Product",

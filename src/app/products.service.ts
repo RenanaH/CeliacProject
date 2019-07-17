@@ -15,19 +15,56 @@ export class ProductsService {
   findAll(): Product[] {
     return this.products;
 }
+p:Product;
+add_new_product(product_list:Product[], id:string)
+{
+  this.p=this.find(id);
+product_list.push((this.p));
+}
 
+update_quantity(id: String, quantity: number)
+{//מקבלת אי די וכמות ומעדכנת את הכמות של המוצר, קורה בעת לחיצה על הוסף לסל
+  this.products[this.getSelectedIndex(id)].quantity=quantity;
+}
+get_quantity(id: String)
+    {
+      return this.products[this.getSelectedIndex(id.toString())].quantity;
+    }
 
 find(id: string): Product {
   return this.products[this.getSelectedIndex(id)];
 }
 
-private getSelectedIndex(id: string) {
+private getSelectedIndex(id: String) {
   for (var i = 0; i < this.products.length; i++) {
       if (this.products[i].id == id) {
           return i;
       }
   }
   return -1;
+}
+private getSelectedIndexInCart(pro_list:Product[],id: String) {
+  for (var i = 0; i < this.products.length; i++) {
+      if (pro_list[i].id == id) {
+          return i;
+      }
+  }
+  return -1;
+}
+d:Number=0;
+add_product(products_list:Product[],id)
+{
+  this.d=0;
+  for (var i = 0; i < products_list.length; i++) {
+    if (products_list[i].id == id) {
+     this.d=1;
+        break;
+    }
+}
+if(this.d==0)
+{
+  products_list.push(this.find(id));
+} 
 }
   constructor() {
     this.products =[{

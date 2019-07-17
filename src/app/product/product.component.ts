@@ -35,6 +35,8 @@ plus()
   {
     this.index++;
     this.count.setValue(this.index);
+    this.productsService.update_quantity(this.product.id,this.index);
+   // alert(this.product.id+"fnu,"+this.product.quantity);
   }
 }
 minus()
@@ -43,14 +45,10 @@ minus()
   {
   this.index--;
   this.count.setValue(this.index);
+  this.productsService.update_quantity(this.product.id,this.index);
   }
 }
 //add to cart
 
-////////string באות קטנה, ספק אם זה טוב
-  add_product(id_product :string)
-  {
-    this.productsService.find(id_product);
-  }
 
 }

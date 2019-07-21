@@ -8,47 +8,45 @@ import { ProductsService } from '../products.service';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  
+
   count = new FormControl('');
-  
+  @Output() addProduct = new EventEmitter();
   @Input() product: Product;
   public should_product = false;
-  index=0;
-  
+  index = 0;
 
-  constructor(private productsService: ProductsService) { 
+
+  constructor(private productsService: ProductsService) {
     this.count.setValue(this.index);
   }
 
   ngOnInit() {
-    
+
   }
-  
-  Buy()
-  {
+
+  Buy() {
     this.should_product = true;
 
   }
-plus()
-{
-  if(this.index<10)
-  {
-    this.index++;
-    this.count.setValue(this.index);
-    this.productsService.update_quantity(this.product.id,this.index);
-   // alert(this.product.id+"fnu,"+this.product.quantity);
+  plus() {
+    if (this.index < 10) {
+      this.index++;
+      this.count.setValue(this.index);
+      this.productsService.update_quantity(this.product.id, this.index);
+      // alert(this.product.id+"fnu,"+this.product.quantity);
+    }
   }
-}
-minus()
-{
-  if(this.index>0)
-  {
-  this.index--;
-  this.count.setValue(this.index);
-  this.productsService.update_quantity(this.product.id,this.index);
+  minus() {
+    if (this.index > 0) {
+      this.index--;
+      this.count.setValue(this.index);
+      this.productsService.update_quantity(this.product.id, this.index);
+    }
   }
-}
-//add to cart
+  //add to cart
+  add(){
+    this.addProduct.emit(this.product.id)
+  }
 
 
 }

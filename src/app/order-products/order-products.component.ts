@@ -11,29 +11,28 @@ import { ActivatedRoute } from '@angular/router';
 export class OrderProductsComponent implements OnInit {
   activatedRoute: ActivatedRoute;
 
-  products=[];
-  products_in_cart=[];
+  products = [];
+  products_in_cart = [];
 
   ngOnInit(): void {
-   // throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
     this.getProducts();
   }
- 
-cart: CartComponent;
 
- constructor(private productService :ProductsService)
- {
-   this.cart=new CartComponent(this.activatedRoute,productService);
- }
- getProducts(): void {
-  this.products = this.productService.findAll();
-}
-//add to cart
-////////string באות קטנה, ספק אם זה טוב
-add_product_to_cart(id: String ):void
-{
- //this.cart.all_cart(id,1);
-this.productService.add_product(this.products_in_cart,id);
-}
+  cart: CartComponent;
+
+  constructor(private productService: ProductsService) {
+    this.cart = new CartComponent(this.activatedRoute, productService);
+  }
+  getProducts(): void {
+    this.products = this.productService.findAll();
+  }
+  //add to cart
+  ////////string באות קטנה, ספק אם זה טוב
+  add_product_to_cart(id: String): void {
+    //this.cart.all_cart(id,1);
+    console.log(id)
+    this.productService.add_product(this.products_in_cart, id);
+  }
 
 }

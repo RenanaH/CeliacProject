@@ -1,31 +1,26 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <!-- חללחלחל -->
 
 <!-- לךלךל -->
-    <div *ngFor="let p of products" class="div-products">
-      <div class="column div-products">
-    <app-product [product]="p"></app-product>
-    <br/>
-    <button (click)="add_product_to_cart(p.id)">הוסף לסל</button>
-
+<div *ngFor="let p of products" class="div-products">
+  <div class="column div-products">
+    <app-product [product]="p" (addProduct)="add_product_to_cart($event)"></app-product>
     <!-- <a [routerLink]="['/cart', { id:p.id }]">Buy Now</a> -->
   </div>
-    </div>
-    <h4>סל הקניות</h4>
-    
-    <div *ngFor="let p of products_in_cart">
-      <td>{{p.name}}</td>
-      <td>{{p.price}}</td>
-       <td>{{p.quantity}}</td> 
-      <td>{{p.price * p.quantity}}</td>
-    </div>
-    <!-- <div class="div-products"></div> -->
-        <!-- <a [routerLink]="['/cart', { id:p.id }]">Buy Now</a></div> -->
-    <!-- <a [routerLink]="['/cart']">Buy Now</a> -->
-    <!-- <a (click)="remove(p.id)">הסר</a> -->
+</div>
+<h4>סל הקניות</h4>
+
+<div *ngFor="let p of products_in_cart">
+  <td>{{p.name}}</td>
+  <td>{{p.price}}</td>
+  <td>{{p.quantity}}</td>
+  <td>{{p.price * p.quantity}}</td>
+
+</div>
+<!-- <div class="div-products"></div> -->
+<!-- <a [routerLink]="['/cart', { id:p.id }]">Buy Now</a></div> -->
+<!-- <a [routerLink]="['/cart']">Buy Now</a> -->
+<!-- <a (click)="remove(p.id)">הסר</a> -->
 <!-- </div>
 <div class="col-25">
   <div class="container">
@@ -35,13 +30,13 @@
       </span>
     </h4> -->
 <!-- <app-cart></app-cart> -->
-   
+
 <!-- <div>
     <p>{{p.id}}</p>
     <p>{{p.name}}</p>
     <td>{{p.price}}</td>
      <td>{{item.quantity}}</td> -->
-    <!--<td>{{item.product.price * item.quantity}}</td>
+<!--<td>{{item.product.price * item.quantity}}</td>
   </div> -->
 <!-- 
 <p><a href="#">Product 4</a> <span class="price">$2</span></p>
@@ -50,7 +45,7 @@
 </div> -->
 
 
-    <!-- <div class="container pt-5">
+<!-- <div class="container pt-5">
       <div class="row">
         <div class="col-md-12 text-center">
          <div class="row row-margin-bottom mt-5">
@@ -85,27 +80,27 @@
        
         </div>
         </div> -->
-        <h3>Cart Info</h3>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Sub Total</th>
-            </tr>
-            <tr *ngFor="let item of products_in_cart">
-                <td class="td1" 
-                <!-- align="center" -->
-                >
-                    <a (click)="remove(item.product.id)">X</a>
-                </td>
-                <td>{{item.name}}</td>
-                <td>{{item.price}}</td>
-                <td>{{item.quantity}}</td>
-                <td>{{item.price * item.quantity}}</td>
-            </tr>
-            <tr>
-                <td colspan="6" align="right">Total</td>
-                <td>{{total}}</td>
-            </tr>
-        </table>
+<div class="cart-info">
+  <h3>Cart Info</h3>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Sub Total</th>
+    </tr>
+    <tr *ngFor="let item of products_in_cart">
+      <td class="td1">
+        <a (click)="remove(item.product.id)">X</a>
+      </td>
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.quantity}}</td>
+      <td>{{item.price * item.quantity}}</td>
+    </tr>
+    <tr>
+      <td colspan="6" align="right">Total</td>
+      <td>{{total}}</td>
+    </tr>
+  </table>
+</div>

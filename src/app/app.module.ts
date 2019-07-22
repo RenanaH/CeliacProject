@@ -39,6 +39,7 @@ import { OneProductComponent } from './one-product/one-product.component';
 import { ConnectionService } from './connection.service';
 import { ChildProductComponent } from './child-product/child-product.component';
 import { CartComponent } from './cart/cart.component';
+import { OnCeliacComponent } from './on-celiac/on-celiac.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { CartComponent } from './cart/cart.component';
     OneProductComponent,
     ChildProductComponent,
     CartComponent,
+    OnCeliacComponent,
    
   ],
   imports: [

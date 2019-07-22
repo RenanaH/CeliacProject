@@ -1,0 +1,25 @@
+.gradient-shadow {
+    background: rgba(0, 0, 0, 0.2);
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, #fff 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%,#fff 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%,#fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 0.2)', endColorstr='#fff',GradientType=1 );
+    filter: blur(2px);
+    width: 755px;
+    height: 500px;
+    position: relative;
+    left: 0px;
+    top: 10px;
+    margin: 0 auto;
+  }
+  .shadow-box {
+    color: gray;
+    width: 750px;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    margin-top: -485px;
+    height: 500px;
+    direction: rtl;
+    font-family: Tahoma,Geneva,sans-serif;
+  }

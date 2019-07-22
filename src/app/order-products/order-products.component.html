@@ -8,15 +8,17 @@
     <!-- <a [routerLink]="['/cart', { id:p.id }]">Buy Now</a> -->
   </div>
 </div>
-<h4>סל הקניות</h4>
+<!-- <h4>סל הקניות</h4> -->
 
-<div *ngFor="let p of products_in_cart">
+<!-- <div *ngFor="let p of products_in_cart">
   <td>{{p.name}}</td>
   <td>{{p.price}}</td>
   <td>{{p.quantity}}</td>
   <td>{{p.price * p.quantity}}</td>
 
-</div>
+</div> -->
+
+
 <!-- <div class="div-products"></div> -->
 <!-- <a [routerLink]="['/cart', { id:p.id }]">Buy Now</a></div> -->
 <!-- <a [routerLink]="['/cart']">Buy Now</a> -->
@@ -81,13 +83,13 @@
         </div>
         </div> -->
 <div class="cart-info">
-  <h3>Cart Info</h3>
+  <h3>סל הקניות</h3>
   <table>
     <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Quantity</th>
-      <th>Sub Total</th>
+      <th>שם</th>
+      <th>מחיר</th>
+      <th>כמות</th>
+      <th>סה"כ:</th>
     </tr>
     <tr *ngFor="let item of products_in_cart">
       <td class="td1">
@@ -103,4 +105,5 @@
       <td>{{total}}</td>
     </tr>
   </table>
+  <button (click)="to_pay()" class="btn btn-outline-primary">לתשלום</button>
 </div>

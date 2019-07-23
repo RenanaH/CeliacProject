@@ -98,12 +98,32 @@
       <td>{{item.name}}</td>
       <td>{{item.price}}</td>
       <td>{{item.quantity}}</td>
-      <td>{{item.price * item.quantity}}</td>
+      <td>{{item.quantity}}</td>
     </tr>
     <tr>
       <td colspan="6" align="right">Total</td>
       <td>{{total}}</td>
     </tr>
   </table>
+
+  <div class="container">סל הקניות
+    <div class="row row_cart">
+      <div class="col row_cart">מוצר:</div>
+      <div class="col row_cart">מחיר</div>
+      <div class="col row_cart">כמות</div>
+      <div class="col row_cart">סה"כ</div>
+    </div>
+      <div class="row" *ngFor="let item of products_in_cart">
+      <div class="col row_cart">{{item.name}}</div>
+      <div class="col row_cart">{{item.price}}</div>
+      <div class="col row_cart">{{item.quantity}}</div>
+      <div class="col row_cart">{{item.quantity}}</div>
+    </div>
+    
+  </div>
+
+
+  <a class="itemReadMore button" href="https://kesherhk.info/Pay.aspx?id=1880&value=29c7eebdcaa04bb&pId=9910&dest=1&lang=he-IL&cur=1&titles=noStyle"> לתשלום </a>
   <button (click)="to_pay()" class="btn btn-outline-primary">לתשלום</button>
 </div>
+<!-- //////////////////// -->

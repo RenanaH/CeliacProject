@@ -121,10 +121,12 @@ input:disabled{
         color: #fff;
         background-color: #717fe0;
         border: 1px solid transparent;
-     
         position: relative;
         display: inline-block;
         margin: 100px auto;
         text-transform: uppercase;
         font-size: 15px;
+    }
+    .btn{
+        margin-top: 10px;
     }

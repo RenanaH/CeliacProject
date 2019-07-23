@@ -13,10 +13,28 @@
     margin: 0 auto;
   }
   .shadow-box {
+    color: gray;
     width: 750px;
     background: #fff;
     padding: 20px;
     position: relative;
     margin-top: -485px;
     height: 500px;
+    direction:rtl;
+    font-family: Tahoma,Geneva,sans-serif;
+    text-align: right;
+
   }
+  a.itemReadMore.button {
+    color: white;
+}
+a.itemReadMore.button {
+    background: black;
+    border-radius: 0px;
+    font-size: 19px;
+    padding: 1px 23px;
+    border: 1px solid black;
+}
+a.itemReadMore.button {
+    margin-top: 18px;
+}

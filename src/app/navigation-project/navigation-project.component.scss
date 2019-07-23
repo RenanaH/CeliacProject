@@ -65,9 +65,18 @@
     vertical-align: middle;
     display: inline-block;
     position: absolute;
-    right: 0px;
+    right: 0px 0px;
     padding: 0px 0px;
     border-radius: 50%;
+}
+
+.logo {
+  position: relative;
+  top: 5px;
+  left: 95%;
+  right: 0;
+  margin: auto;
+  border: 5px solid #cc8800;
 }
 
   .filler {

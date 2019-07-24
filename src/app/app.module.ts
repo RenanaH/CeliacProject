@@ -37,14 +37,12 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { OneProductComponent } from './one-product/one-product.component';
 import { ConnectionService } from './connection.service';
 import { ChildProductComponent } from './child-product/child-product.component';
-<<<<<<< HEAD
 import { RegisterPageComponent } from './register-page/register-page.component';
-=======
+
 import { CartComponent } from './cart/cart.component';
 import { OnCeliacComponent } from './on-celiac/on-celiac.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
->>>>>>> c04fd630a2c867621ac8a7d565e2010cf17874ba
 
 @NgModule({
   declarations: [
@@ -61,16 +59,10 @@ import { LayoutModule } from '@angular/cdk/layout';
     AddProductComponent,
     OneProductComponent,
     ChildProductComponent,
-<<<<<<< HEAD
     RegisterPageComponent,
-=======
     CartComponent,
     OnCeliacComponent,
     NavigationComponent,
-<<<<<<< HEAD
->>>>>>> c04fd630a2c867621ac8a7d565e2010cf17874ba
-=======
->>>>>>> 41c9b61e9e9f5d8eed835eef0b8ccb29da915c94
 
   ],
   imports: [
@@ -104,24 +96,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     // Flex-layout
    // FlexLayoutModule
   ],
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    AboutCeliacCommunityComponent,
-    WhatThisCeliacComponent,
-    ContactUsComponent,
-    ProductComponent,
-    OrderProductsComponent,
-    LoginPageComponent,
-    NavigationProjectComponent,
-    OrderProductsOldComponent,
-    AddProductComponent,
-    OneProductComponent,
-    ChildProductComponent,
-    CartComponent,
-    OnCeliacComponent,
-   
-  ],
+  
  
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

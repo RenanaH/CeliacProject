@@ -16,6 +16,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { NavigationProjectComponent } from './navigation-project/navigation-project.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
 
 import {
   MatButtonModule,
@@ -30,7 +31,7 @@ import {
   MatSidenavModule,
   MatSlideToggleModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
 } from '@angular/material';
 import { OrderProductsOldComponent } from './order-products-old/order-products-old.component';
 import { ProductsService } from './products.service';
@@ -61,7 +62,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     CartComponent,
     OnCeliacComponent,
     NavigationComponent,
-   
+
   ],
   imports: [
     BrowserModule,
@@ -89,7 +90,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTabsModule,
     MatToolbarModule,
     MatCardModule,
-    LayoutModule
+    LayoutModule,
+    MatTableModule
     // Flex-layout
    // FlexLayoutModule
   ],

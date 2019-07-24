@@ -3,6 +3,12 @@ import { ProductComponent } from '../product/product.component';
 import { ProductsService } from '../products.service';
 import { CartComponent } from '../cart/cart.component';
 import { ActivatedRoute } from '@angular/router';
+export interface PeriodicElement {
+  name: string;
+  price: number;
+  quantity: number;
+  total: string;
+}
 @Component({
   selector: 'app-order-products',
   templateUrl: './order-products.component.html',
@@ -12,7 +18,7 @@ export class OrderProductsComponent implements OnInit {
   activatedRoute: ActivatedRoute;
 
   products = [];
-  products_in_cart = [];
+  products_in_cart: PeriodicElement[] = [];
 
   ngOnInit(): void {
     // throw new Error("Method not implemented.");

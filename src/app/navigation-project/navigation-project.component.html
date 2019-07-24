@@ -2,14 +2,6 @@
 
 <!------ Include the above in your HEAD tag ---------->
 
-
-<!-- <nav>
-  <a routerLink="/app-what-this-celiac" routerLinkActive="active">מה זה צליאק?</a>
-  <a routerLink="/app-about-celiac-community" routerLinkActive="active">אודות העמותה</a>
-  <a routerLink="/app-order-products" routerLinkActive="active">הזמנות</a>
-  <a routerLink="/app-product" routerLinkActive="active">צור קשר</a>
-
-</nav> -->
 <mat-toolbar color="primary">
 
   <mat-toolbar-row>
@@ -18,7 +10,9 @@
         <img class="logo" src="https://scontent.ftlv7-1.fna.fbcdn.net/v/t1.0-1/p200x200/49101915_528132327689280_3574598897030397952_n.jpg?_nc_cat=111&_nc_oc=AQllP9zHArnRWjsbe2MxPsfXwkryvqEbUIxAD0gt2azdu-Ywv_h3UGpbiDZz6uiEaXo&_nc_ht=scontent.ftlv7-1.fna&oh=892ed556abb4768ce1206abf517a4f75&oe=5DBFF26C" title="" alt="">
       </a>
     </div>
-    <span routerLink="/app-contact-us" routerLinkActive="active">צור קשר</span>
+    <span (click)="open_contact_us_dialog()">צור קשר</span>
+    <!-- <span routerLink="/app-contact-us" routerLinkActive="active">צור קשר</span> -->
+
     <span class="filler"></span>
     <span routerLink="/app-about-celiac-community" routerLinkActive="active">אודות העמותה</span>
     <span class="gap"></span>

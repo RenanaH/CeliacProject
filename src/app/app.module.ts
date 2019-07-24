@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -42,24 +40,6 @@ import { CartComponent } from './cart/cart.component';
 import { OnCeliacComponent } from './on-celiac/on-celiac.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    AboutCeliacCommunityComponent,
-    WhatThisCeliacComponent,
-    ContactUsComponent,
-    ProductComponent,
-    OrderProductsComponent,
-    LoginPageComponent,
-    NavigationProjectComponent,
-    OrderProductsOldComponent,
-    AddProductComponent,
-    OneProductComponent,
-    ChildProductComponent,
-    CartComponent,
-    OnCeliacComponent,
-   
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -89,6 +69,25 @@ import { OnCeliacComponent } from './on-celiac/on-celiac.component';
     // Flex-layout
    // FlexLayoutModule
   ],
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    AboutCeliacCommunityComponent,
+    WhatThisCeliacComponent,
+    ContactUsComponent,
+    ProductComponent,
+    OrderProductsComponent,
+    LoginPageComponent,
+    NavigationProjectComponent,
+    OrderProductsOldComponent,
+    AddProductComponent,
+    OneProductComponent,
+    ChildProductComponent,
+    CartComponent,
+    OnCeliacComponent,
+   
+  ],
+ 
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
 ],

@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ConnectionService } from '../connection.service';
+import { MatDialogRef } from '@angular/material';
 
 @Component({
   selector: 'app-contact-us',
@@ -11,11 +12,10 @@ export class ContactUsComponent implements OnInit {
   //submitted = false;
 
   //onSubmit() { this.submitted = true; }
-
   contactForm: FormGroup;
   disabledSubmitButton: boolean = true;
   optionsSelect: Array<any>;
-  
+  sending = false;
     @HostListener('input') oninput() {
   
       if (this.contactForm.valid) {
@@ -23,7 +23,7 @@ export class ContactUsComponent implements OnInit {
       }
     }
   
-    constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
+    constructor(private fb: FormBuilder, private connectionService: ConnectionService, private dialogRef: MatDialogRef<ContactUsComponent>) {
 
       this.contactForm = fb.group({
         'contactFormName': ['', Validators.required],
@@ -51,6 +51,13 @@ export class ContactUsComponent implements OnInit {
       }, error => {
         console.log('Error', error);
       });
+      //window.open('mailto:renanashuv@gmail.com');
+      // this.close();
+      this.sending = true;
     }
-  
+    
+    close()
+    {
+      this.dialogRef.close();
+    }
   }

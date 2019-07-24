@@ -1,0 +1,32 @@
+<h3>Cart Info</h3>
+<!-- <table border="1"> -->
+  <table>
+    <tr>
+        <th>id</th>
+        <th>מוצר</th>
+        <th>מחיר</th>
+        <th>כמות</th>
+        <th>מחיר למוצר זה</th>
+    </tr>
+    <tr *ngFor="let item of items">
+        <!-- <td align="center"> -->
+         
+        <td>{{item.product.id}}</td>
+        <td>{{item.product.name}}</td>
+        <!-- <td>
+            <img src="assets/http://learningprogramming.net/wp-content/uploads/mean_stack/angular/{{item.product.image}}" width="50">
+            <img [src]="item.product.image" class="img-product">
+        </td> -->
+        <td>{{item.product.price}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.product.price * item.quantity}}</td>
+        <td>
+                <a (click)="remove(item.product.id)">הסר</a>
+         </td>
+    </tr>
+    <tr>
+        <!-- <td colspan="6" align="right">Total</td> -->
+        <td colspan="6">Total</td>
+        <td>{{total}}</td>
+    </tr>
+</table>

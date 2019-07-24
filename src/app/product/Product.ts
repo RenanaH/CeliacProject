@@ -4,14 +4,15 @@
 //     Breads,
 // }
 export class Product{
-    id:Number;
+    id:String;
     name: String;
     image:String;
     price:Number;
     category:String;
     description:String;
+    quantity:number;
   
-    constructor( id:Number,name: String, image:String,price:Number ,category:String,description:String)
+    constructor( id:String,name: String, image:String,price:Number ,category:String,description:String)
     { 
         this.id=id;
         this. name=name;
@@ -19,5 +20,18 @@ export class Product{
         this. price=price;
         this.category=category;
         this.description=description;
+        this.quantity=0;
     }
+    // copy_product(p:Product)
+    // { 
+    //     this.id=p.id;
+    //     this. name=p.name;
+    //     this.image= p.image;
+    //     this. price=p.price;
+    //     this.category=p.category;
+    //     this.description=p.description;
+    //     this.quantity=0;
+    // }
+
+   
 }

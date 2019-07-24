@@ -11,7 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductComponent } from './product/product.component';
 import { OrderProductsComponent } from './order-products/order-products.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { NavigationProjectComponent } from './navigation-project/navigation-project.component';
@@ -38,7 +38,14 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { OneProductComponent } from './one-product/one-product.component';
 import { ConnectionService } from './connection.service';
 import { ChildProductComponent } from './child-product/child-product.component';
+<<<<<<< HEAD
 import { RegisterPageComponent } from './register-page/register-page.component';
+=======
+import { CartComponent } from './cart/cart.component';
+import { OnCeliacComponent } from './on-celiac/on-celiac.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+>>>>>>> c04fd630a2c867621ac8a7d565e2010cf17874ba
 
 @NgModule({
   declarations: [
@@ -55,13 +62,20 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     AddProductComponent,
     OneProductComponent,
     ChildProductComponent,
+<<<<<<< HEAD
     RegisterPageComponent,
-   
+=======
+    CartComponent,
+    OnCeliacComponent,
+    NavigationComponent,
+>>>>>>> c04fd630a2c867621ac8a7d565e2010cf17874ba
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
     MatButtonModule,
@@ -82,7 +96,8 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     MatSlideToggleModule,
     MatTabsModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule
     // Flex-layout
    // FlexLayoutModule
   ],

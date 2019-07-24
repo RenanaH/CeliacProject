@@ -1,20 +1,60 @@
-a {
-    text-align: center;
-    margin:5%;
-font-size: 30px;
-color: aliceblue;
-}
-// a{
-//   display: flex;
-// 	flex-direction: row;
-// 	flex-wrap: wrap;
-// 	justify-content: center;
-// 	align-items: stretch;
-// 	align-content: flex-start;
-// }
+:host{
 
-  
-  .example-spacer {
-    flex:1 1 auto;
+  .mat-toolbar.mat-primary {
+    background: #ffff00;
+    color: black;
   }
-  
+
+  .example-spacer {
+    flex: 0.5px 1.5px auto;
+  }
+
+  .navbar-default {
+    margin-top: 50px; /* you don't need add this line */
+    border-radius: 0px;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    color: #9d9d9d;
+  }
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 3px solid #f62329;
+    background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
+    background-repeat: no-repeat;
+  }
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #ffff00;
+    border-bottom: 3px solid #f62329;
+    background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+  }
+
+  .elementor-image img {
+    border-radius: 50%;
+    width: 80px;
+  }
+
+  .elementor-image{
+    position: absolute;
+    right: 0;
+  }
+
+  .logo {
+    border: 2px solid #070707; //#cc8800;
+  }
+
+  span{
+    cursor: pointer;
+    margin: 0px 20px;
+  }
+
+}
+

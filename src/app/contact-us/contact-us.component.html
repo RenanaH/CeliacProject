@@ -69,7 +69,7 @@
       <div class="md-form">
         <input type="email" formControlName="contactFormEmail" id="materialContactFormEmail" class="form-control"
           mdbInput>
-        <label for="materialContactFormEmail">E-mail</label>
+        <label id="mail" for="materialContactFormEmail">E-mail</label>
       </div>
 
       <!-- <span>Subject</span>
@@ -92,7 +92,11 @@
       </div> -->
 
       <button mdbBtn color="info" outline="true" rounded="true" block="true" class="z-depth-0 my-4 waves-effect"
-        mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+		mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+		<a href="mailto:renanashuv@gmail.com">send</a>
+		<!-- <a href="mailto:webmaster@example.com">send</a> -->
+
+
 
     </form>
 

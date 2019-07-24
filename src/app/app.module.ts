@@ -40,6 +40,8 @@ import { ConnectionService } from './connection.service';
 import { ChildProductComponent } from './child-product/child-product.component';
 import { CartComponent } from './cart/cart.component';
 import { OnCeliacComponent } from './on-celiac/on-celiac.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,7 @@ import { OnCeliacComponent } from './on-celiac/on-celiac.component';
     ChildProductComponent,
     CartComponent,
     OnCeliacComponent,
+    NavigationComponent,
    
   ],
   imports: [
@@ -85,7 +88,8 @@ import { OnCeliacComponent } from './on-celiac/on-celiac.component';
     MatSlideToggleModule,
     MatTabsModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule
     // Flex-layout
    // FlexLayoutModule
   ],

@@ -23,3 +23,15 @@
     direction: rtl;
     font-family: Tahoma,Geneva,sans-serif;
   }
+  @media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+      float: left;
+      width: 20%;
+      max-width: 20%;
+      padding: 50px;
+    }
+  }
+
+  .carousel-multi-item-2 .card img {
+    border-radius: 2px;
+  }

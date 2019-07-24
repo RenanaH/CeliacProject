@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // a {
 //     text-align: center;
 //     margin:5%;
@@ -16,81 +17,65 @@ span{
   font-family: 'gisha', Arial, sans-serif;
   font-weight: bold;
 }
+=======
+:host{
 
-.mat-toolbar.mat-primary {
-  background: #ffff00;
-  color: black;
-}
-  
-  .example-spacer {
-    flex:0.5px 1.5px auto;
+  .mat-toolbar.mat-primary {
+    background: #ffff00;
+    color: black;
   }
-  // a {
-  //   float: left;
-  //   color: #f2f2f2;
-  //   text-align: center;
-  //   padding: 0.5px 0.5px;
-  //   text-decoration: none;
-  //   font-size: 30px;
-  // }
-  ////////////
-  .navbar-default{
-    margin-top:50px; /* you don't need add this line */
- border-radius: 0px;
-}
+>>>>>>> 41c9b61e9e9f5d8eed835eef0b8ccb29da915c94
 
-.navbar-inverse .navbar-nav > li > a {
- color: #9d9d9d;
-}
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus
-{
- color: #fff;
- background-color: transparent;
- border-bottom: 3px solid #f62329;
- background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
- background-repeat: no-repeat;
+  .example-spacer {
+    flex: 0.5px 1.5px auto;
+  }
 
+  .navbar-default {
+    margin-top: 50px; /* you don't need add this line */
+    border-radius: 0px;
+  }
 
+  .navbar-inverse .navbar-nav > li > a {
+    color: #9d9d9d;
+  }
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 3px solid #f62329;
+    background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
+    background-repeat: no-repeat;
+  }
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #ffff00;
+    border-bottom: 3px solid #f62329;
+    background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+  }
 
-}
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
- color: #fff;
- background-color: #ffff00;
- border-bottom: 3px solid #f62329;
- background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
- background-repeat: no-repeat;
- position: absolute;
- width: 100%;
-}
-  // .example-spacer {
-  //   flex:1 1 auto;
-  // }
-  
-    .elementor-image img {
-    vertical-align: middle;
-    display: inline-block;
-    position: absolute;
-    right: 0px 0px;
-    padding: 0px 0px;
+  .elementor-image img {
     border-radius: 50%;
+    width: 80px;
+  }
+
+  .elementor-image{
+    position: absolute;
+    right: 0;
+  }
+
+  .logo {
+    border: 2px solid #070707; //#cc8800;
+  }
+
+  span{
+    cursor: pointer;
+    margin: 0px 20px;
+  }
+
 }
 
-.logo {
-  position: relative;
-  top: 5px;
-  left: 95%;
-  right: 0;
-  margin: auto;
-  border: 5px solid #070707;//#cc8800;
-}
-
-  .filler {
-    flex: 1 1 auto;
- }
- .gap {
-    margin-right: 10px;
-    flex: 1 1 auto;
- }

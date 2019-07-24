@@ -14,6 +14,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { NavigationProjectComponent } from './navigation-project/navigation-project.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
 
 import {
   MatButtonModule,
@@ -28,7 +29,7 @@ import {
   MatSidenavModule,
   MatSlideToggleModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
 } from '@angular/material';
 import { OrderProductsOldComponent } from './order-products-old/order-products-old.component';
 import { ProductsService } from './products.service';
@@ -38,8 +39,32 @@ import { ConnectionService } from './connection.service';
 import { ChildProductComponent } from './child-product/child-product.component';
 import { CartComponent } from './cart/cart.component';
 import { OnCeliacComponent } from './on-celiac/on-celiac.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
+<<<<<<< HEAD
+=======
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    AboutCeliacCommunityComponent,
+    WhatThisCeliacComponent,
+    ContactUsComponent,
+    ProductComponent,
+    OrderProductsComponent,
+    LoginPageComponent,
+    NavigationProjectComponent,
+    OrderProductsOldComponent,
+    AddProductComponent,
+    OneProductComponent,
+    ChildProductComponent,
+    CartComponent,
+    OnCeliacComponent,
+    NavigationComponent,
+
+  ],
+>>>>>>> 41c9b61e9e9f5d8eed835eef0b8ccb29da915c94
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -65,7 +90,9 @@ import { OnCeliacComponent } from './on-celiac/on-celiac.component';
     MatSlideToggleModule,
     MatTabsModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule,
+    MatTableModule
     // Flex-layout
    // FlexLayoutModule
   ],

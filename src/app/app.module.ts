@@ -43,8 +43,6 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
-<<<<<<< HEAD
-=======
   declarations: [
     AppComponent,
     HomePageComponent,
@@ -64,7 +62,6 @@ import { LayoutModule } from '@angular/cdk/layout';
     NavigationComponent,
 
   ],
->>>>>>> 41c9b61e9e9f5d8eed835eef0b8ccb29da915c94
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,0 +1,36 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" style="max-width:400px;margin:auto" dir="rtl">
+    <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="שם משתמש" formControlName="userName" required>
+      </div>
+
+      <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" placeholder="דואר אלקטרוני" formControlName="email" required >
+      </div>
+
+      <div class="input-container">
+        <i class="fa fa-phone icon"></i>
+        <input class="input-field" type="text" placeholder="טלפון" formControlName="phone" required >
+      </div>
+
+      <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="סיסמה" formControlName="psw">
+      </div>
+      <div *ngIf="gen.psw.invalid && gen.psw.touched">
+        <div style="color: red" *ngIf="gen.psw.errors.required || gen.psw.errors.minlength">
+            סיסמה צריכה להכיל לפחות 6 תווים.
+        </div>
+      </div>
+      <div class="input-container">
+        <i class="fa fa-check icon"></i>
+        <input class="input-field" type="password" placeholder="אימות סיסמה" formControlName="confirmPsw">
+      </div>
+      <div style="color: red" *ngIf="gen.confirmPsw.errors !== null && gen.confirmPsw.touched" >{{registerForm.get('confirmPsw').errors | json }}</div>
+
+  <button class="btn">הרשם</button>
+</form>

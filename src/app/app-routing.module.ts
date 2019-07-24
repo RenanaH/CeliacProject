@@ -7,6 +7,7 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { ProductComponent } from "./product/product.component";
 import { OneProductComponent } from "./one-product/one-product.component";
 import { CartComponent } from "./cart/cart.component";
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 const routes: Routes = [
   { path: "app-what-this-celiac", component: WhatThisCeliacComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: "app-order-products", component: OrderProductsComponent },
   { path: "app-contact-us", component: ContactUsComponent },
   { path: "cart", component: CartComponent },
-  { path: "", redirectTo: "app-what-this-celiac", pathMatch: "full" }
+  { path: "", redirectTo: "app-what-this-celiac", pathMatch: "full" },
+  { path: 'app-register-page', component: RegisterPageComponent }
 ];
 
 @NgModule({

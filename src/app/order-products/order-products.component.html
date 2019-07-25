@@ -8,6 +8,48 @@
     </div>
   </div>
 </div>
+
+
+
+<div class="container orderItems">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th class="text-center"></th>
+            <th>כמות</th>
+            <th>מחיר</th>
+            <th>מוצר</th>
+        </tr>
+    </thead>
+            <tr *ngFor="let p of products_in_cart">
+                <td class="text-center"> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> הסר</a></td>
+                <td>{{p.quantity}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.name}}</td>
+            </tr>
+    </table>
+    </div>
+</div>
+
+<div class="cartItems">
+<div *ngFor="let p of products_in_cart" class="div-products">
+  <table>
+    <tr>
+      <td>name</td>
+      <td>price</td>
+      <td>quantity</td>
+    </tr>
+  </table>
+  <div class="column div-products">
+    <td>{{p.name}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.quantity}}</td>
+  </div>
+</div>
+</div>
+
+
 <table mat-table [dataSource]="products_in_cart" class="mat-elevation-z8">
   <!--- Note that these columns can be defined in any order.
             The actual rendered columns are set as a property on the row definition" -->
@@ -46,4 +88,4 @@
 >
   לתשלום
 </a>
-<button (click)="to_pay()" class="btn btn-outline-primary">לתשלום</button>
+<!-- <button (click)="to_pay()" class="btn btn-outline-primary">לתשלום</button> -->

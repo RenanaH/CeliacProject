@@ -17,8 +17,13 @@ export interface PeriodicElement {
 export class OrderProductsComponent implements OnInit {
   activatedRoute: ActivatedRoute;
 
+  totalPrice=0;
   products = [];
-  products_in_cart: PeriodicElement[] = [];
+  price;//מחיר מוצר אחד
+  quantity;//כמות מוצר אחד
+  price_to_quantity_product;//מחיר עבור מוצר ספציפי
+ // products_in_cart: PeriodicElement[] = [];
+ products_in_cart=[];
 
   ngOnInit(): void {
     // throw new Error("Method not implemented.");
@@ -39,6 +44,13 @@ export class OrderProductsComponent implements OnInit {
     //this.cart.all_cart(id,1);
     console.log(id)
     this.productService.add_product(this.products_in_cart, id);
+    this.price=this.productService.find(id.toString()).price;
+    this.quantity=this.productService.find(id.toString()).quantity;
+    this.price_to_quantity_product=this.price*this.quantity;
+    this.totalPrice=this.totalPrice+ this.price_to_quantity_product;
+    console.log(this.totalPrice)
+    console.log(this.price)
+    console.log(this.price_to_quantity_product)
   }
 
 }

@@ -11,6 +11,8 @@ export class ProductComponent implements OnInit {
 
   count = new FormControl('');
   @Output() addProduct = new EventEmitter();
+  @Output() plusProduct = new EventEmitter();
+  @Output() minusProduct = new EventEmitter();
   @Input() product: Product;
   public should_product = false;
   index = 0;
@@ -34,6 +36,8 @@ export class ProductComponent implements OnInit {
       this.count.setValue(this.index);
       this.productsService.update_quantity(this.product.id, this.index);
       // alert(this.product.id+"fnu,"+this.product.quantity);
+      this.plusProduct.emit(this.product.id)
+
     }
   }
   minus() {
@@ -41,6 +45,7 @@ export class ProductComponent implements OnInit {
       this.index--;
       this.count.setValue(this.index);
       this.productsService.update_quantity(this.product.id, this.index);
+      this.minusProduct.emit(this.product.id)
     }
   }
   //add to cart

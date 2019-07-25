@@ -22,6 +22,7 @@ export class OrderProductsComponent implements OnInit {
   price;//מחיר מוצר אחד
   quantity;//כמות מוצר אחד
   price_to_quantity_product;//מחיר עבור מוצר ספציפי
+  if_has_buy=false;
  // products_in_cart: PeriodicElement[] = [];
  products_in_cart=[];
 
@@ -41,6 +42,7 @@ export class OrderProductsComponent implements OnInit {
   //add to cart
   ////////string באות קטנה, ספק אם זה טוב
   add_product_to_cart(id: String): void {
+    this.if_has_buy=true;
     //this.cart.all_cart(id,1);
     console.log(id)
     this.productService.add_product(this.products_in_cart, id);
@@ -51,6 +53,23 @@ export class OrderProductsComponent implements OnInit {
     console.log(this.totalPrice)
     console.log(this.price)
     console.log(this.price_to_quantity_product)
+  }
+  remove(id:String)
+  {
+    this.products_in_cart[this.productService.getSelectedIndexInCart(this.products_in_cart,id)].remove;
+    this.products_in_cart.splice(this.productService.getSelectedIndexInCart(this.products_in_cart,id), 1);
+    this.price=this.productService.find(id.toString()).price;
+    this.quantity=this.productService.find(id.toString()).quantity;
+    this.totalPrice=this.totalPrice- this.price_to_quantity_product;
+
+  }
+  plus_one_product(id: String){
+    this.price=this.productService.find(id.toString()).price;
+    this.totalPrice=this.totalPrice+ this.price;
+  }
+  minus_one_product(id: String){
+    this.price=this.productService.find(id.toString()).price;
+    this.totalPrice=this.totalPrice- this.price;
   }
 
 }

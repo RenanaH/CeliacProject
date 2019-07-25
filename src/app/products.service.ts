@@ -43,7 +43,7 @@ private getSelectedIndex(id: String) {
   }
   return -1;
 }
-private getSelectedIndexInCart(pro_list:Product[],id: String) {
+ getSelectedIndexInCart(pro_list:Product[],id: String) {
   for (var i = 0; i < this.products.length; i++) {
       if (pro_list[i].id == id) {
           return i;

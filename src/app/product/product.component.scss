@@ -22,11 +22,14 @@
 
 .pricetext {
 	font-weight:solid;
-	font-size:1em;
+    font-size:1em;
+    height: 20px;
 }
 .img-responsive{
     height: 200px;
     width: 200px;
+    border-radius: 10%;
+    border: solid 1px black;
 }
 // .plus-minus-input {
 // 	align-items: center;

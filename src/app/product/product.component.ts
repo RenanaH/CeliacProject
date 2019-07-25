@@ -50,7 +50,10 @@ export class ProductComponent implements OnInit {
   }
   //add to cart
   add(){
-    this.addProduct.emit(this.product.id)
+    if(this.index>0)
+      this.addProduct.emit(this.product.id)
+      else
+      alert("");
   }
 
 

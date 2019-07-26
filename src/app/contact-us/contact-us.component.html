@@ -2,7 +2,7 @@
 
 	<mdb-card-header class="info-color white-text text-center py-4">
 		<h5>
-			<strong>Contact us</strong>
+			<strong>יצירת קשר</strong>
 		</h5>
 	</mdb-card-header>
 
@@ -11,35 +11,35 @@
 		<form class="text-center" style="color: #757575;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
 			<div class="md-form mt-3">
+				<label for="materialContactFormName">שם</label>
 				<input type="text" formControlName="contactFormName" id="materialContactFormName" class="form-control"
 					mdbInput>
-				<label for="materialContactFormName">Name</label>
 			</div>
 
 			<div class="md-form">
+				<label id="mail" for="materialContactFormEmail">מייל</label>
 				<input type="email" formControlName="contactFormEmail" id="materialContactFormEmail"
 					class="form-control" mdbInput>
-				<label id="mail" for="materialContactFormEmail">E-mail</label>
 			</div>
 
 
 			<div class="md-form">
+				<label for="materialContactFormMessage">תוכן ההודעה</label>
 				<textarea type="text" formControlName="contactFormMessage" id="materialContactFormMessage"
 					class="form-control md-textarea" mdbInput></textarea>
-				<label for="materialContactFormMessage">Message</label>
 			</div>
 
 			<button mdbBtn color="info" outline="true" rounded="true" block="true" class="z-depth-0 my-4 waves-effect"
-				mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+				mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">שלח</button>
 			<!-- <a href="mailto:renanashuv@gmail.com">send</a> -->
-
-			<button (click)="close()">סגור</button>
-
+			<div>
+				<button (click)="close()">סגור</button>
+			</div>
 		</form>
 
 	</mdb-card-body>
 	<mdb-card-body class="px-lg-5 pt-0" *ngIf="sending">
-		<h2>send success</h2>
+		<h2>ההודעה נשלחה בהצלחה</h2>
 		<button (click)="close()">סגור</button>
 	</mdb-card-body>
 </mdb-card>

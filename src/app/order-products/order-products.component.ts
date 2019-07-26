@@ -57,10 +57,13 @@ export class OrderProductsComponent implements OnInit {
     this.products_in_cart.splice(this.productService.getSelectedIndexInCart(this.products_in_cart,id), 1);
     this.price=this.productService.find(id.toString()).price;
     this.quantity=this.productService.find(id.toString()).quantity;
+    this.price_to_quantity_product=this.price*this.quantity;
+
     this.totalPrice=this.totalPrice- this.price_to_quantity_product;
   }
   plus_one_product(id: String){
-   if(this.productService.getSelectedIndexInCart(this.products_in_cart,id.toString())!=-1){
+  
+   if(this.productService.getSelectedIndexInCart(this.products_in_cart,id)!=-1){
       this.price=this.productService.find(id.toString()).price;
       this.totalPrice=this.totalPrice+ this.price;
     }
@@ -70,7 +73,7 @@ export class OrderProductsComponent implements OnInit {
     this.price=this.productService.find(id.toString()).price;
     this.totalPrice=this.totalPrice- this.price;
     }
-    if(this.products_in_cart[this.productService.getSelectedIndexInCart(this.products_in_cart,id)].quantity=0)
+    if(this.products_in_cart[this.productService.getSelectedIndexInCart(this.products_in_cart,id)].quantity==0)
       this.products_in_cart.splice(this.productService.getSelectedIndexInCart(this.products_in_cart,id), 1);
   }
 

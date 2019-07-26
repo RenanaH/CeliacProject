@@ -1,6 +1,6 @@
 :host {
   display: grid;
-  grid-template-rows: 80px 0 auto 30px;
+  grid-template-rows: 80px 0 auto auto;
   height: 100%;
 
   footer {
@@ -9,7 +9,28 @@
     background-color: #272e38; //#002b80;
     color:#fff;
     text-align: center;
+    height: fit-content;
   }
 
 
+
+  //not my
+//   footer.page-footer {
+//     bottom: 0;
+//     color: #fff;
+// }
+//   @media (min-width: 768px){
+//     .col-md-12 {
+//       -ms-flex: 0 0 100%;
+//       flex: 0 0 100%;
+//       max-width: 100%;
+//   }
+//   }
+//   .mb-5, .my-5 {
+//     margin-bottom: 3rem!important;
+// }
+//   .fab {
+//     font-family: 'Font Awesome 5 Brands';
+// }
+// }
 }

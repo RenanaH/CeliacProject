@@ -34,10 +34,10 @@ export class ProductComponent implements OnInit {
     if (this.index < 10) {
       this.index++;
       this.count.setValue(this.index);
+      console.log(this.product.id);
       this.productsService.update_quantity(this.product.id, this.index);
       // alert(this.product.id+"fnu,"+this.product.quantity);
       this.plusProduct.emit(this.product.id)
-
     }
   }
   minus() {

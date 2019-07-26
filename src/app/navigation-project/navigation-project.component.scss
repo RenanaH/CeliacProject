@@ -87,10 +87,10 @@ nav > div a.nav-item.nav-link.active:after
 }
 .tab-content{
   background: #fdfdfd;
-    line-height: 195px;
+    line-height: 100%;
     border: 1px solid #ddd;
     border-top:5px solid 	#DAA520;
-    border-bottom:5px solid 	#DAA520;
+    //border-bottom:5px solid 	#DAA520;
     padding:30px 25px;
 }
 

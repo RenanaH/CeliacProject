@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 1;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  font-style: bold;
+}
+.topright {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-size: 18px;
+}
+
+.elementor-image img {
+  border-radius: 50%;
+  width: 80px;
+}
+.elementor-image{
+  position: absolute;
+  right: 0;
+}
+.logo {
+  border: 2px solid #070707; //#cc8800;
+}

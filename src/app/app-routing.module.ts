@@ -8,6 +8,7 @@ import { ProductComponent } from "./product/product.component";
 import { OneProductComponent } from "./one-product/one-product.component";
 import { CartComponent } from "./cart/cart.component";
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
   { path: "app-what-this-celiac", component: WhatThisCeliacComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: "app-order-products", component: OrderProductsComponent },
   { path: "app-contact-us", component: ContactUsComponent },
   { path: 'app-register-page', component: RegisterPageComponent },
+  { path: 'app-home-page', component: HomePageComponent},
   { path: "cart", component: CartComponent },
   { path: "", redirectTo: "app-what-this-celiac", pathMatch: "full" }
 

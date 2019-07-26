@@ -45,6 +45,8 @@ mat-list {
 }
 .orderItems{
   width: 100%;
+  font-family: Tahoma,Geneva,sans-serif;
+  font-size: 16px;
 }
 .cartItems{
   width: 10%
@@ -59,4 +61,11 @@ mat-list {
 .custab:hover{
   box-shadow: 3px 3px 0px transparent;
   transition: 0.5s;
+  }
+  .btn_remove{
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 15px;
+    border-color: black;
+    color: #DAA520;
+    background-color: #DAA520
   }

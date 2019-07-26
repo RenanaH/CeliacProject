@@ -72,7 +72,7 @@ if(this.d==0)
       "id":"111",
       "name": "פיצה ביתית",
       "image": "https://www.celiac.org.il/images/com_yoorecipe/476/cropped-pizzaorna.protected.jpg",
-      "price": 80,
+      "price":30,
       "category":"hhgh",
       "description": "פיצה טעימה על בצק קריספי ללא גלוטן",
       "quantity":0
@@ -164,20 +164,47 @@ if(this.d==0)
 }
 ,{
   "id":"114",
-  "name": "לחם טחינה וסילאן",
-  "image": "",
-  "price": 22,
+  "name": "לחמניות טריות",
+  "image": "https://schneider.org.il/_uploads/extraimg/br.jpg",
+  "price": 5,
   "category":"hhgh",
-  "description": "לחם מתקתק עם טחינה, סילאן ואגוזים",
+  "description": "לחמניות ביתיות הישר מהתנור",
   "quantity":0
 }
 ,{
   "id":"115",
-  "name": "לחם טחינה וסילאן",
-  "image": "",
+  "name": "לחם כפרי",
+  "image": "https://www.היערהשחורגרמניה.com/wp-content/uploads/2017/07/no-gluten-bread-1905736_1920.jpg",
   "price": 22,
-  "category":"hhgh",
-  "description": "לחם מתקתק עם טחינה, סילאן ואגוזים",
+  "category":"סגכ",
+  "description": "לחם עשיר בסיבים תזונתיים, שקדים ואגוזים",
+  "quantity":0
+}
+,{
+  "id":"115",
+  "name": "לחם דבש",
+  "image": "https://www.assia.co.il/wp-content/uploads/2015/02/Celiac_Bread_no_gluten.jpg",
+  "price": 22,
+  "category":"סגכ",
+  "description": "לחם טרי בציפוי מתקתק של דבש",
+  "quantity":0
+}
+,{
+  "id":"115",
+  "name": "חלה ללא גלוטן",
+  "image": "https://www.goodiz.tv/wp-content/uploads/2015/12/Picture22.jpg",
+  "price": 22,
+  "category":"סגכ",
+  "description": "חלה עשירה",
+  "quantity":0
+}
+,{
+  "id":"115",
+  "name": "קרוטונים",
+  "image": "http://hamishmar.org.il/wp-content/uploads/2014/11/Gluten-free-croutons-191114.jpg",
+  "price": 22,
+  "category":"סגכ",
+  "description": "קרוטונים נטולי גלוטן עשירים בטיבול איטלקי ",
   "quantity":0
 }
 

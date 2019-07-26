@@ -1,15 +1,14 @@
 <div class="orderItems">
   <div *ngFor="let p of products" class="div-products">
     <div class="column div-products">
-      <app-product [product]="p" (addProduct)="add_product_to_cart($event)"
-      (plusProduct)="plus_one_product($event)"
-      (minusProduct)="minus_one_product($event)"></app-product>
+      <app-product [product]="p" (addProduct)="add_product_to_cart($event)" (plusProduct)="plus_one_product($event)"
+        (minusProduct)="minus_one_product($event)"></app-product>
     </div>
   </div>
 </div>
 
-<div class="container orderItems" *ngIf="if_has_buy">
-  <div class="row col-md-6 col-md-offset-2 custyle">
+<div class="container" *ngIf="if_has_buy">
+  <div class="row col-md-6 col-md-offset-2 custyle  orderItems">
     <table class="table table-striped custab">
       <thead>
         <tr>
@@ -20,7 +19,7 @@
         </tr>
       </thead>
       <tr *ngFor="let p of products_in_cart">
-        <td class="text-center"> <a class="btn btn-danger btn-xs" (click)="remove(p.id)"><span
+        <td class="text-center"> <a class="btn btn_remove btn-dark" (click)="remove(p.id)"><span
               class="glyphicon glyphicon-remove"></span> הסר</a></td>
         <td>{{p.quantity}}</td>
         <td>{{p.price}}</td>
@@ -28,45 +27,47 @@
 
       </tr>
       <tr>
-      <td colspan="2">{{totalPrice}}</td>
-      <td colspan="2">:מחיר כולל</td>
+        <td colspan="2">{{totalPrice}}</td>
+        <td colspan="2">:מחיר כולל</td>
       </tr>
 
     </table>
+    <div>
+      <a
+        href="https://kesherhk.info/Pay.aspx?id=1880&value=29c7eebdcaa04bb&pId=9910&dest=1&lang=he-IL&cur=1&titles=noStyle">
+        לתשלום
+      </a>
+    </div>
   </div>
-  
-<a class="itemReadMore button"
-href="https://kesherhk.info/Pay.aspx?id=1880&value=29c7eebdcaa04bb&pId=9910&dest=1&lang=he-IL&cur=1&titles=noStyle">
-לתשלום
-</a>
+
 </div>
 
 
 
 <!-- <table mat-table [dataSource]="products_in_cart" class="mat-elevation-z8"> -->
-  <!--- Note that these columns can be defined in any order.
+<!--- Note that these columns can be defined in any order.
             The actual rendered columns are set as a property on the row definition" -->
 
-  <!-- Position Column -->
-  <!-- <ng-container matColumnDef="price">
+<!-- Position Column -->
+<!-- <ng-container matColumnDef="price">
     <th mat-header-cell *matHeaderCellDef>מחיר</th>
     <td mat-cell *matCellDef="let element">{{ element.price }}</td>
   </ng-container> -->
 
-  <!-- Name Column -->
-  <!-- <ng-container matColumnDef="name">
+<!-- Name Column -->
+<!-- <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>Name</th>
     <td mat-cell *matCellDef="let element">{{ element.name }}</td>
   </ng-container> -->
 
-  <!-- Weight Column -->
-  <!-- <ng-container matColumnDef="quantity">
+<!-- Weight Column -->
+<!-- <ng-container matColumnDef="quantity">
     <th mat-header-cell *matHeaderCellDef>Weight</th>
     <td mat-cell *matCellDef="let element">{{ element.quantity }}</td>
   </ng-container> -->
 
-  <!-- Symbol Column -->
-  <!-- <ng-container matColumnDef="total">
+<!-- Symbol Column -->
+<!-- <ng-container matColumnDef="total">
     <th mat-header-cell *matHeaderCellDef>Symbol</th>
     <td mat-cell *matCellDef="let element">{{ element.total }}</td>
   </ng-container>

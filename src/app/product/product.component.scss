@@ -1,4 +1,5 @@
 .productbox {
+    font-family: Tahoma,Geneva,sans-serif;
     background-color:#ffffff;
 	-webkit-box-shadow: 0 8px 6px -6px  #999;
 	   -moz-box-shadow: 0 8px 6px -6px  #999;
@@ -11,6 +12,7 @@
     font-weight:bold;
     padding:2px 0 2px 0;
     width: 188px;
+    font-size: 15px;
 }
 
 .productprice {
@@ -22,8 +24,9 @@
 
 .pricetext {
 	font-weight:solid;
-    font-size:1em;
+    font-size:0.9em;
     height: 20px;
+    direction: rtl
 }
 .img-responsive{
     height: 200px;
@@ -31,37 +34,13 @@
     border-radius: 10%;
     border: solid 1px black;
 }
-// .plus-minus-input {
-// 	align-items: center;
-  
-// 	.input-group-field {
-// 	  text-align: center;
-// 	  margin-left: 0.5rem;
-// 	  margin-right: 0.5rem;
-// 	  padding: 0.1rem;
-  
-// 	  &::-webkit-inner-spin-button,
-// 	  ::-webkit-outer-spin-button {
-// 		appearance: center;
-// 	  }
-// 	}
-  
-// 	.input-group-button {
-// 	  .circle {
-// 		border-radius: 150%;
-// 		padding: 0.9em 1em;
-// 	  }
-// 	}
-//   }
-  
-  ///quantity
+
   .qty .count {
     color: #000;
     display: inline-block;
     vertical-align: top;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600px;
     padding: 0 2px
     ;min-width: 35px;
     text-align: center;
@@ -70,7 +49,7 @@
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
-    color: white;
+    color: #DAA520;
     width: 30px;
     height: 30px;
     font: 30px/1 Arial,sans-serif;
@@ -82,7 +61,7 @@
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
-    color: white;
+    color: #DAA520;
     width: 30px;
     height: 30px;
     font: 30px/1 Arial,sans-serif;
@@ -132,4 +111,8 @@ input:disabled{
     }
     .btn{
         margin-top: 10px;
+        font-size: 13px;
+        border-color: #DAA520;;
+        color: #DAA520;
     }
+    

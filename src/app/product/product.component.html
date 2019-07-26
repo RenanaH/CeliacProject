@@ -4,7 +4,7 @@
   <div class="productprice">
     <div>
       <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
-      <div class="pricetext">{{product.price}}</div>
+      <div class="pricetext">{{product.price}}  ש"ח</div>
       <div class="pricetext">{{product.description}}</div>
 
       <div class="qty qty mt-5">
@@ -12,7 +12,7 @@
         <input type="number" class="count" name="qty" value="1" [formControl]="count">
         <span class="plus bg-dark" (click)="plus()">+</span>
       </div>
-      <button (click)="add()" class="btn btn-outline-primary" >הוסף לסל</button>
+      <button (click)="add()" class="btn btn-dark" >הוסף לסל</button>
 
 
       <!-- <a href="#" class="btn btn-danger btn-sm" role="button">+</a></div> -->

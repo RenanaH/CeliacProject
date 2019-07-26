@@ -28,7 +28,7 @@ export class RegisterPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  public comparisonValidator() : ValidatorFn{
+  public comparisonValidator() :ValidatorFn{
     return (registerForm: FormGroup): ValidationErrors => {
        const control1 = registerForm.controls['psw'];
        const control2 = registerForm.controls['confirmPsw'];

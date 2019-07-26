@@ -1,41 +1,41 @@
-:host{
+// :host{
 
-  .mat-toolbar.mat-primary {
-    background: #ffff00;
-    color: black;
-  }
+//   .mat-toolbar.mat-primary {
+//     background: #ffff00;
+//     color: black;
+//   }
 
-  .example-spacer {
-    flex: 0.5px 1.5px auto;
-  }
+//   .example-spacer {
+//     flex: 0.5px 1.5px auto;
+//   }
 
-  .navbar-default {
-    margin-top: 50px; /* you don't need add this line */
-    border-radius: 0px;
-  }
+//   .navbar-default {
+//     margin-top: 50px; /* you don't need add this line */
+//     border-radius: 0px;
+//   }
 
-  .navbar-inverse .navbar-nav > li > a {
-    color: #9d9d9d;
-  }
-  .navbar-inverse .navbar-nav > li > a:hover,
-  .navbar-inverse .navbar-nav > li > a:focus {
-    color: #fff;
-    background-color: transparent;
-    border-bottom: 3px solid #f62329;
-    background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
-    background-repeat: no-repeat;
-  }
-  .navbar-inverse .navbar-nav > .active > a,
-  .navbar-inverse .navbar-nav > .active > a:hover,
-  .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #fff;
-    background-color: #ffff00;
-    border-bottom: 3px solid #f62329;
-    background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-  }
+//   .navbar-inverse .navbar-nav > li > a {
+//     color: #9d9d9d;
+//   }
+//   .navbar-inverse .navbar-nav > li > a:hover,
+//   .navbar-inverse .navbar-nav > li > a:focus {
+//     color: #fff;
+//     background-color: transparent;
+//     border-bottom: 3px solid #f62329;
+//     background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
+//     background-repeat: no-repeat;
+//   }
+//   .navbar-inverse .navbar-nav > .active > a,
+//   .navbar-inverse .navbar-nav > .active > a:hover,
+//   .navbar-inverse .navbar-nav > .active > a:focus {
+//     color: #fff;
+//     background-color: #ffff00;
+//     border-bottom: 3px solid #f62329;
+//     background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
+//     background-repeat: no-repeat;
+//     position: relative;
+//     width: 100%;
+//   }
 
   .elementor-image img {
     border-radius: 50%;
@@ -51,10 +51,55 @@
     border: 2px solid #070707; //#cc8800;
   }
 
-  span{
-    cursor: pointer;
-    margin: 0px 20px;
-  }
+//   span{
+//     cursor: pointer;
+//     margin: 0px 20px;
+//   }
+
+// }
+
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
 
 }
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
 
+nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: 	#DAA520 ;
+}
+.tab-content{
+  background: #fdfdfd;
+    line-height: 195px;
+    border: 1px solid #ddd;
+    border-top:5px solid 	#DAA520;
+    border-bottom:5px solid 	#DAA520;
+    padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: 	#DAA520;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}

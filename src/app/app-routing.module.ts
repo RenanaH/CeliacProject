@@ -17,9 +17,10 @@ const routes: Routes = [
   },
   { path: "app-order-products", component: OrderProductsComponent },
   { path: "app-contact-us", component: ContactUsComponent },
+  { path: 'app-register-page', component: RegisterPageComponent },
   { path: "cart", component: CartComponent },
-  { path: "", redirectTo: "app-what-this-celiac", pathMatch: "full" },
-  { path: 'app-register-page', component: RegisterPageComponent }
+  { path: "", redirectTo: "app-what-this-celiac", pathMatch: "full" }
+
 ];
 
 @NgModule({

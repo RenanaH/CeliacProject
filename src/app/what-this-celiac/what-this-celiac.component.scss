@@ -19,7 +19,7 @@
     padding: 20px;
     position: relative;
     margin-top: -485px;
-    height: 500px;
+   // height: 500px;
     direction:rtl;
     font-family: Tahoma,Geneva,sans-serif;
     text-align: right;
@@ -37,4 +37,10 @@ a.itemReadMore.button {
 }
 a.itemReadMore.button {
     margin-top: 18px;
+}
+.btn{
+  margin-top: 10px;
+  font-size: 13px;
+  border-color: #DAA520;;
+  color: #DAA520;
 }

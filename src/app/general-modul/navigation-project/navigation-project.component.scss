@@ -1,42 +1,3 @@
-// :host{
-
-//   .mat-toolbar.mat-primary {
-//     background: #ffff00;
-//     color: black;
-//   }
-
-//   .example-spacer {
-//     flex: 0.5px 1.5px auto;
-//   }
-
-//   .navbar-default {
-//     margin-top: 50px; /* you don't need add this line */
-//     border-radius: 0px;
-//   }
-
-//   .navbar-inverse .navbar-nav > li > a {
-//     color: #9d9d9d;
-//   }
-//   .navbar-inverse .navbar-nav > li > a:hover,
-//   .navbar-inverse .navbar-nav > li > a:focus {
-//     color: #fff;
-//     background-color: transparent;
-//     border-bottom: 3px solid #f62329;
-//     background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
-//     background-repeat: no-repeat;
-//   }
-//   .navbar-inverse .navbar-nav > .active > a,
-//   .navbar-inverse .navbar-nav > .active > a:hover,
-//   .navbar-inverse .navbar-nav > .active > a:focus {
-//     color: #fff;
-//     background-color: #ffff00;
-//     border-bottom: 3px solid #f62329;
-//     background: url("http://s31.postimg.org/9k42omozb/arrow.png") bottom;
-//     background-repeat: no-repeat;
-//     position: relative;
-//     width: 100%;
-//   }
-
   .elementor-image img {
     border-radius: 50%;
     width: 80px;
@@ -48,22 +9,16 @@
   }
 
   .logo {
-    border: 2px solid #070707; //#cc8800;
+    border: 2px solid #070707;
   }
-
-//   span{
-//     cursor: pointer;
-//     margin: 0px 20px;
-//   }
-
-// }
-
 nav > .nav.nav-tabs{
 
   border: none;
     color:#fff;
     background:#272e38;
     border-radius:0;
+    font-style: bold;
+    font-family: Tahoma,Geneva,sans-serif;
 
 }
 nav > div a.nav-item.nav-link,
@@ -90,7 +45,6 @@ nav > div a.nav-item.nav-link.active:after
     line-height: 100%;
     border: 1px solid #ddd;
     border-top:5px solid 	#DAA520;
-    //border-bottom:5px solid 	#DAA520;
     padding:30px 25px;
 }
 

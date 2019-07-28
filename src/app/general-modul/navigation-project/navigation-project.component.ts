@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { RegisterPageComponent } from '../../identification-modul/register-page/register-page.component';
+import { LoginPageComponent } from '../../identification-modul/login-page/login-page.component';
 import { OrderProductsComponent } from '../../orders-module/order-products/order-products.component';
 
 
@@ -23,12 +24,19 @@ export class NavigationProjectComponent implements OnInit {
 
   ngOnInit() {
   }
+
 open_contact_us_dialog()
 {
   this.dialog.open(ContactUsComponent);
 }
+
 open_register_dialog()
 {
   this.dialog.open(RegisterPageComponent);
+}
+
+open_login_dialog()
+{
+  this.dialog.open(LoginPageComponent);
 }
 }

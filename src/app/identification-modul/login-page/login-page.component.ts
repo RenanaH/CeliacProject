@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Message } from '@angular/compiler/src/i18n/i18n_ast';
-
+import { UserMangementService } from '../../user-managment.service';
 
 @Component({
   selector: 'app-login-page',
@@ -9,22 +9,23 @@ import { Message } from '@angular/compiler/src/i18n/i18n_ast';
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-  name; mail;
-  //name = new FormControl('');
- // mail = new FormControl('');
-  formGroup ;
+  loginForm = new FormGroup({
+    userName: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email])
+  });
 
-  constructor() { }
+  constructor(private userService: UserMangementService) {
 
-  ngOnInit() {
-    this.formGroup=new FormGroup(
-    {
-   name: new FormControl('',Validators.required),
-   mail : new FormControl('',Validators.email)
-    });
   }
 
-  updateName(){
-    console.warn(this.formGroup.value);
+  ngOnInit() {
+  //   this.formGroup=new FormGroup(
+  //   {
+  //  name: new FormControl('',Validators.required),
+  //  mail : new FormControl('',Validators.email)
+  //   });
+  }
+
+  onSubmit() {
   }
 }

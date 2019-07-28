@@ -1,13 +1,16 @@
 
-<form  [formGroup]=formGroup (ngSubmit)= "updateName()">
-<p>
-  Name:
-  <input type="text" formControlName="name">
-  Mail:
-  <input type="email" formControlName="mail">
-</p>
-  <p>
-    <button type="submit" [disabled]="!formGroup.valid">login</button>
-  </p>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" style="max-width:400px;margin:auto" dir="rtl">
+    <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="שם משתמש" formControlName="userName" required>
+      </div>
+
+      <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" placeholder="דואר אלקטרוני" formControlName="email" required >
+      </div>
+      <button class="btn">הכנס</button>
 </form>
 

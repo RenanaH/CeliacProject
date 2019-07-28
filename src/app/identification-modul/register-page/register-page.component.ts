@@ -43,11 +43,12 @@ export class RegisterPageComponent implements OnInit {
   onSubmit() {
     // stop here if form is invalid
     if (this.registerForm.valid) {
-
       let user={
+        "userName": this.registerForm.value.userName,
         "email": this.registerForm.value.mail,
-        "password": this.registerForm.value.password
-    };
+        "password": this.registerForm.value.password,
+        "phone": this.registerForm.value.phone
+      };
       this.userService.register(user);
 
       }

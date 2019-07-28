@@ -36,7 +36,7 @@ import { ProductsService } from './orders-module/products.service';
 import { AddProductComponent } from './orders-module/add-product/add-product.component';
 import { OneProductComponent } from './orders-module/one-product/one-product.component';
 import { ConnectionService } from './connection.service';
-import { ChildProductComponent } from './child-product/child-product.component';
+//import { ChildProductComponent } from './child-product/child-product.component';
 import { RegisterPageComponent } from './identification-modul/register-page/register-page.component';
 
 import { CartComponent } from './orders-module/cart/cart.component';
@@ -58,7 +58,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     OrderProductsOldComponent,
     AddProductComponent,
     OneProductComponent,
-    ChildProductComponent,
+    //ChildProductComponent,
     RegisterPageComponent,
     CartComponent,
     OnCeliacComponent,

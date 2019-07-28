@@ -1,4 +1,4 @@
-import { Product } from 'src/app/product/Product';
+import { Product } from 'src/app/orders-module/product/Product';
 
 export class Item {
 

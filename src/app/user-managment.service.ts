@@ -4,8 +4,8 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
-import {LoginPageComponent} from './login-page/login-page.component';
-import { RegisterPageComponent } from './register-page/register-page.component';
+import {LoginPageComponent} from './identification-modul/login-page/login-page.component';
+import { RegisterPageComponent } from './identification-modul/register-page/register-page.component';
 
 @Injectable({
   providedIn: 'root'

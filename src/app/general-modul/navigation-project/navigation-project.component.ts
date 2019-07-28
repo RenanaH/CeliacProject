@@ -1,7 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
-import { RegisterPageComponent } from '../register-page/register-page.component';
+import { RegisterPageComponent } from '../../identification-modul/register-page/register-page.component';
+import { OrderProductsComponent } from '../../orders-module/order-products/order-products.component';
+
+
+
+// ProductComponent,
+//     OrderProductsComponent,
+//     OneProductComponent,
+//     CartComponent
 
 @Component({
   selector: 'app-navigation-project',

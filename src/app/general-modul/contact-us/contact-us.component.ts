@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ConnectionService } from '../connection.service';
+import { ConnectionService } from '../../connection.service';
 import { MatDialogRef } from '@angular/material';
 
 @Component({
@@ -17,12 +17,12 @@ export class ContactUsComponent implements OnInit {
   optionsSelect: Array<any>;
   sending = false;
     @HostListener('input') oninput() {
-  
+
       if (this.contactForm.valid) {
         this.disabledSubmitButton = false;
       }
     }
-  
+
     constructor(private fb: FormBuilder, private connectionService: ConnectionService, private dialogRef: MatDialogRef<ContactUsComponent>) {
 
       this.contactForm = fb.group({
@@ -42,7 +42,7 @@ export class ContactUsComponent implements OnInit {
       { value: 'Other stuff', label: 'Other stuff' },
       ];
     }
-  
+
     onSubmit() {
       this.connectionService.sendMessage(this.contactForm.value).subscribe(() => {
         alert('Your message has been sent.');
@@ -55,7 +55,7 @@ export class ContactUsComponent implements OnInit {
       // this.close();
       this.sending = true;
     }
-    
+
     close()
     {
       this.dialogRef.close();
